@@ -51,7 +51,7 @@ typedef struct ufdt
     PFILETABLE ptrfiletable;
 }UFDT;
 
-UFDT UFDTArr[50];                  // Array of structure
+UFDT UFDTArr[50];                  
 SUPERBLOCK SUPERBLOCKobj;
 PINODE head = NULL;
 
@@ -595,9 +595,9 @@ int main()
         fflush(stdin);
         strcpy(str,"");
 
-        printf("\nMarvellous VFS : > ");
+        printf("\n CVFS : > ");
 
-        fgets(str,80,stdin);    // scanf("%[^'\n']s",str);
+        fgets(str,80,stdin);  
 
         count = sscanf(str,"%s %s %s %s",command[0],command[1],command[2],command[3]);
 
@@ -625,7 +625,7 @@ int main()
             }
             else if(strcmp(command[0],"exit") == 0)
             {
-                printf("Terminating the Marvellous Virtual File System \n");
+                printf("Terminating the Customised Virtual File System \n");
                 break;
             }
             else
